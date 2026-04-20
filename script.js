@@ -28,6 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Hero Actions
+    const heroArBtn = document.querySelector('.hero-actions .btn-glow');
+    const heroMapBtn = document.querySelector('.hero-actions .btn-secondary');
+    if(heroArBtn) heroArBtn.addEventListener('click', () => document.getElementById('ar-nav').scrollIntoView({behavior: 'smooth'}));
+    if(heroMapBtn) heroMapBtn.addEventListener('click', () => document.getElementById('heatmap').scrollIntoView({behavior: 'smooth'}));
+
     // Smooth Scrolling for Nav Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
