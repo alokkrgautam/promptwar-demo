@@ -40,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
     // Voice Toggle
     const voiceToggleBtn = document.getElementById('voiceToggleBtn');
     if (voiceToggleBtn) {
@@ -75,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
     // Incident Simulation
     const incidentBtn = document.getElementById('incidentBtn');
     let incidentActive = false;
