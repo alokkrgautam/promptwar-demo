@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMD Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <span>Command Prompt - snake.exe</span>
+        </div>
+        <div class="terminal-body">
+            <p>Microsoft Windows [Version 10.0.19045.2965]</p>
+            <p>(c) Microsoft Corporation. All rights reserved.</p>
+            <br>
+            <p>C:\Users\Player&gt; snake.exe --hurdles=true --theme=cmd</p>
+            <p class="status-text">Starting game sequence... Done.</p>
+            
+            <div class="game-wrapper">
+                <div class="score-board">
+                    <span>SCORE: <span id="score">0</span></span>
+                    <span>HIGH SCORE: <span id="high-score">0</span></span>
+                </div>
+                <canvas id="gameCanvas" width="400" height="400"></canvas>
+                <div id="game-over-screen" class="hidden">
+                    <h2>SYSTEM FAILURE</h2>
+                    <p>Process terminated with exit code 1.</p>
+                    <br>
+                    <p>Press [SPACE] to reboot.</p>
+                </div>
+            </div>
+            <p class="blinking-cursor">C:\Users\Player&gt; <span class="cursor">_</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
