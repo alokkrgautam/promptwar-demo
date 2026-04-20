@@ -14,7 +14,9 @@ const DotMap = ({ incidentZone }) => {
       color: ['#00e5ff', '#00e676', '#ffb300', '#ff1744', '#7000ff'][Math.floor(Math.random() * 5)]
     }));
     setDots(initialDots);
+  }, []);
 
+  useEffect(() => {
     const interval = setInterval(() => {
       setDots(prevDots => prevDots.map(dot => {
         let targetX = dot.x + (Math.random() - 0.5) * 15;
