@@ -7,13 +7,14 @@
     <meta name="description" content="Revolutionize your stadium and venue experience with AI heatmaps, AR navigation, and virtual queues.">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-content container">
             <div class="logo">
-                <span class="logo-icon">🏟️</span>
+                <span class="logo-icon"><i data-lucide="map-pin"></i></span>
                 <h1>Smart Event Flow<span class="accent">+</span></h1>
             </div>
             <ul class="nav-links">
@@ -300,5 +301,8 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
 </body>
 </html>
